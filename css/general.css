@@ -36,11 +36,7 @@ html {
   place-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-img {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
+
 h1 {
   font-size: var(--step-5);
   margin-bottom: 10px;
@@ -62,6 +58,7 @@ ins {
   font-size: var(--step-0);
   font-weight: 600;
 }
+
 .row {
   width: 80%;
   max-width: 1170px;
@@ -109,28 +106,6 @@ ins {
   padding-bottom: var(--step-3);
   margin: 0 10px;
 }
-
-@media screen and (max-width: 991px) {
-  .row .right .content {
-    padding-left: 0px;
-  }
-}
-@media screen and (max-width: 872px) {
-  .caption {
-    font-size: var(--step-0);
-    width: 90%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .row {
-    width: 100%;
-    grid-template-columns: 1fr;
-  }
-  .row .left img {
-    width: 100%;
-    margin: auto;
-  }
-  h1 {
-    font-size: var(--step-3);
-  }
+.hidden {
+  display: none;
 }
