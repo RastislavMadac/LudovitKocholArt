@@ -37,8 +37,14 @@
     text-align: center;
     margin-bottom: -61px;
   }
+  .social-collor-2,
+  a {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
   .social-img2 {
-    max-width: 20%;
+    max-width: 50%;
   }
   .list-inline li a {
     display: none;
