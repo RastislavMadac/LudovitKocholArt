@@ -1,9 +1,33 @@
+@media screen and (max-width: 1500px) {
+  .list-inline li a {
+    font-size: var(--step-2);
+  }
+  .sign {
+    font-size: var(--step-1);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .list-inline li a {
+    font-size: var(--step-1);
+  }
+  .sign {
+    font-size: var(--step-0);
+  }
+}
+
 @media screen and (max-width: 991px) {
+  .list-inline li a {
+    font-size: var(--step-0);
+  }
   .row .right .content {
     padding-left: 0px;
   }
 }
-@media screen and (max-width: 872px) {
+@media screen and (max-width: 890px) {
+  .list-inline li a {
+    display: none;
+  }
+
   .caption {
     font-size: var(--step-0);
     width: 90%;
