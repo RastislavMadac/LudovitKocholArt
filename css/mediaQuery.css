@@ -19,6 +19,11 @@
   .list-inline li a {
     font-size: var(--step-0);
   }
+  a,
+  .social-img {
+    max-width: 30%;
+    text-align: center;
+  }
   .row .right .content {
     padding-left: 0px;
   }
@@ -54,6 +59,11 @@
 }
 
 @media screen and (max-width: 550px) {
+  a,
+  .social-img {
+    max-width: 40%;
+    text-align: center;
+  }
   .img-gallery {
     grid-template-columns: repeat(1, 1fr);
   }
