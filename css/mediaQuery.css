@@ -29,6 +29,17 @@
   }
 }
 @media screen and (max-width: 890px) {
+  .social-black-white {
+    display: none;
+  }
+  .social-collor-2 {
+    display: block;
+    text-align: center;
+    margin-bottom: -61px;
+  }
+  .social-img2 {
+    max-width: 20%;
+  }
   .list-inline li a {
     display: none;
   }
