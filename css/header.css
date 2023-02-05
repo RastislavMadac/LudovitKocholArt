@@ -1,0 +1,41 @@
+header {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.links,
+.navnav-item,
+a {
+  text-decoration: none;
+}
+.links,
+.navnav-item {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5rem;
+  height: 4rem;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.logo a {
+  font-size: var(--step-1);
+  color: rgb(243, 240, 240);
+  margin-left: 5rem;
+}
+.links li a {
+  font-size: var(--step-0);
+  color: rgb(243, 240, 240);
+}
+.links {
+  margin-left: 10rem;
+}

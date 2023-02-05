@@ -6,7 +6,18 @@
     font-size: var(--step-1);
   }
 }
+@media screen and (max-width: 1335px) {
+  .links {
+    margin-left: -3rem;
+  }
+}
 @media screen and (max-width: 1200px) {
+  .logo a {
+    font-size: var(--step-0);
+  }
+  .links li a {
+    font-size: var(--step--1);
+  }
   .list-inline li a {
     font-size: var(--step-1);
   }
@@ -16,6 +27,8 @@
 }
 
 @media screen and (max-width: 991px) {
+  /* header */
+
   .list-inline li a {
     font-size: var(--step-0);
   }
