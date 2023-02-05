@@ -48,11 +48,11 @@
 .full-img-text h1 {
   font-size: var(--step-5);
   align-self: center;
-  background-color: aliceblue;
+  background-color: var(--199111--);
   padding: 10px 10px;
 }
 .full-img p {
-  background-color: aliceblue;
+  background-color: var(--199111--);
   font-size: var(--step-1);
   line-height: var(--step-3);
   padding-bottom: var(--step-3);
@@ -64,7 +64,7 @@
   top: 5%;
   right: 5%;
   font-size: 30px;
-  color: #fff;
+  color: var(--199111--);
   cursor: pointer;
   font-size: var(--step-3);
 }
@@ -78,7 +78,7 @@
 }
 section picture div p {
   font-size: var(--step-0);
-  color: black;
+  color: var(--199112--);
   font-weight: 500;
   text-align: center;
 }
@@ -93,11 +93,11 @@ section picture div p {
   border: none;
   background-color: transparent;
   font-size: var(--step-1);
-  color: blue;
+  color: var(--199113--);
 }
 .gallery-btn:hover {
-  color: black;
-  border-bottom: 2px solid blue;
+  color: var(--199112--);
+  border-bottom: 2px solid var(--199113--);
 }
 .img-gallery {
   margin: 5rem auto;
@@ -108,10 +108,10 @@ section picture div p {
 .list-inline li a {
   text-decoration: none;
   font-size: var(--step-3);
-  color: black;
+  color: var(--199112--);
 }
 .list-inline li a:hover {
-  border-bottom: 4px solid grey;
+  border-bottom: 4px solid var(--199114--);
   font-weight: 900;
 }
 .list-inline {

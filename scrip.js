@@ -33,3 +33,8 @@ function mouseout(ele) {
     imgTwitter.setAttribute("src", "images/170116.webp");
   }
 }
+const hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", function () {
+  const navBar = document.querySelector(".nav-bar");
+  navBar.classList.toggle("active");
+});
