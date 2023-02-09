@@ -33,8 +33,12 @@ function mouseout(ele) {
     imgTwitter.setAttribute("src", "images/170116.webp");
   }
 }
-const hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener("click", function () {
-  const navBar = document.querySelector(".nav-bar");
-  navBar.classList.toggle("active");
+const toogleBtn = document.querySelector(".toogle_btn");
+const toogleBtnIcon = document.querySelector(".toogle_btn i");
+const dropDownMenu = document.querySelector(".dropdown_menu");
+
+toogleBtn.addEventListener("click", function () {
+  dropDownMenu.classList.toggle("open");
+  const isOpen = dropDownMenu.classList.contains("open");
+  toogleBtnIcon.classList = isOpen ? "fa-solid fa-x" : "fa-solid fa-bars";
 });
