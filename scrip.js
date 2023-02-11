@@ -42,3 +42,12 @@ toogleBtn.addEventListener("click", function () {
   const isOpen = dropDownMenu.classList.contains("open");
   toogleBtnIcon.classList = isOpen ? "fa-solid fa-x" : "fa-solid fa-bars";
 });
+
+let counter = 1;
+setInterval(function () {
+  document.getElementById("radio" + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 5000);

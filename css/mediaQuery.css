@@ -1,3 +1,19 @@
+@media screen and (max-width: 1600px) {
+  header .slider {
+    width: 1400px;
+    height: 500px;
+  }
+  .slide img {
+    width: 1400px;
+    height: 500px;
+  }
+  .navigation-manual {
+    width: 1400px;
+  }
+  .navigation-auto {
+    width: 1400px;
+  }
+}
 @media screen and (max-width: 1500px) {
   .list-inline li a {
     font-size: var(--step-2);
@@ -7,6 +23,24 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  header .slider {
+    width: 1200px;
+    height: 400px;
+  }
+  .slide img {
+    width: 1200px;
+    height: 400px;
+  }
+  .navigation-manual {
+    width: 1200px;
+    margin-top: 34rem;
+  }
+  .navigation-auto {
+    width: 1200px;
+    margin-top: 34rem;
+  }
+}
 @media screen and (max-width: 1200px) {
   .list-inline li a {
     font-size: var(--step-1);
@@ -14,12 +48,28 @@
   .sign {
     font-size: var(--step-0);
   }
-}
-@media screen and (max-width: 1200px) {
   .navbar .logo {
     display: none;
   }
+
+  header .slider {
+    width: 1000px;
+    height: 400px;
+  }
+  .slide img {
+    width: 1000px;
+    height: 400px;
+  }
+  .navigation-manual {
+    width: 1000px;
+    margin-top: 34rem;
+  }
+  .navigation-auto {
+    width: 1000px;
+    margin-top: 34rem;
+  }
 }
+
 @media screen and (max-width: 1080px) {
   .nav-bar ul li a {
     font-size: var(--step-1);
@@ -28,6 +78,24 @@
   }
   .nav-bar ul li {
     margin: -3px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .slider {
+    width: 900px;
+    height: 350px;
+  }
+  .slide img {
+    width: 900px;
+    height: 350px;
+  }
+  .navigation-manual {
+    width: 900px;
+    margin-top: 29rem;
+  }
+  .navigation-auto {
+    width: 900px;
+    margin-top: 29rem;
   }
 }
 @media screen and (max-width: 991px) {
