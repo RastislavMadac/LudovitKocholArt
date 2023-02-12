@@ -42,12 +42,70 @@ toogleBtn.addEventListener("click", function () {
   const isOpen = dropDownMenu.classList.contains("open");
   toogleBtnIcon.classList = isOpen ? "fa-solid fa-x" : "fa-solid fa-bars";
 });
+let i = 0;
+let j = 4;
 
-let counter = 1;
-setInterval(function () {
-  document.getElementById("radio" + counter).checked = true;
-  counter++;
-  if (counter > 4) {
-    counter = 1;
-  }
-}, 5000);
+const dots = document.querySelectorAll(".dot-container button");
+const images = document.querySelectorAll(".image-container img");
+const dots1 = document.querySelectorAll(".dot-container1 button");
+const images1 = document.querySelectorAll(".image-container1 img");
+
+function next() {
+  document.getElementById("content" + (i + 1)).classList.remove("active");
+  i = (j + i + 1) % j;
+  document.getElementById("content" + (i + 1)).classList.add("active");
+  indicator(i + 1);
+}
+function prev() {
+  document.getElementById("content" + (i + 1)).classList.remove("active");
+  i = (j + i - 1) % j;
+  document.getElementById("content" + (i + 1)).classList.add("active");
+  indicator(i + 1);
+}
+
+function indicator(num) {
+  dots.forEach(function (dot) {
+    dot.style.backgroundColor = "transparent";
+  });
+  document.querySelector(
+    ".dot-container button:nth-child(" + num + ")"
+  ).style.backgroundColor = "#336773";
+}
+function dot(index) {
+  images.forEach(function (image) {
+    image.classList.remove("active");
+  });
+  document.getElementById("content" + index).classList.add("active");
+  i = index - 1;
+  indicator(index);
+}
+
+function next1() {
+  document.getElementById("content1" + (i + 1)).classList.remove("active1");
+  i = (j + i + 1) % j;
+  document.getElementById("content1" + (i + 1)).classList.add("active1");
+  indicator1(i + 1);
+}
+function prev1() {
+  document.getElementById("content1" + (i + 1)).classList.remove("active1");
+  i = (j + i - 1) % j;
+  document.getElementById("content1" + (i + 1)).classList.add("active1");
+  indicator1(i + 1);
+}
+
+function indicator1(num) {
+  dots1.forEach(function (dot1) {
+    dot1.style.backgroundColor = "transparent";
+  });
+  document.querySelector(
+    ".dot-container1 button:nth-child(" + num + ")"
+  ).style.backgroundColor = "#336773";
+}
+function dot1(index) {
+  images1.forEach(function (image) {
+    image.classList.remove("active1");
+  });
+  document.getElementById("content1" + index).classList.add("active1");
+  i = index - 1;
+  indicator1(index);
+}
