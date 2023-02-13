@@ -89,7 +89,7 @@
     margin: 0 89px 0 0;
   }
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 710px) {
   .horizontal-slider {
     display: none;
   }
@@ -155,7 +155,8 @@
   #next1 {
     right: 15px;
   }
-
+}
+@media screen and (max-width: 800px) {
   .row {
     width: 100%;
     grid-template-columns: 1fr;
