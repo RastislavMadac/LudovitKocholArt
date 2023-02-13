@@ -32,6 +32,10 @@
 
 @media screen and (max-width: 991px) {
   /* header */
+
+  .fa-solid {
+    margin-right: 3rem;
+  }
   .navbar .links,
   .navbar .action_btn {
     display: none;
@@ -89,7 +93,7 @@
     margin: 0 89px 0 0;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 800px) and (orientation: portrait) {
   .horizontal-slider {
     display: none;
   }
@@ -161,9 +165,11 @@
     width: 100%;
     grid-template-columns: 1fr;
   }
+  .row .left {
+    margin: auto;
+  }
   .row .left img {
     width: 100%;
-    margin: auto;
   }
   h1 {
     font-size: var(--step-3);
